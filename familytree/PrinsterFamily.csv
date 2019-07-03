@@ -1,0 +1,15 @@
+# This file is a representation of the Prinster/Prünster family tree.
+id,Name,Sex,Parent1,Parent2,BirthDate,DeathDate,MarriedTo
+0,Johann Prünster,M,,1825-10-23,,
+1,Knobe Prünster,M,,1822-10-13,,
+2,Josef Prünster,M,,1818-01-18,1889-02-10,3
+3,Maria Grüner,F,,1823,,2
+4,Maria,F,2,3,1848-10-23,,
+5,Anna,F,2,3,1851-07-04,1860-03-24,
+6,Johann,M,2,3,1852-12-27,1904-02-28,
+7,Joseph,M,2,3,1854-11-24,1929-11-19,
+8,Teresia,F,2,3,1856-07-25,,
+9,Michael,M,2,3,1858-12-17,1906-01-02,,
+10,Anna,F,2,3,1861-01-11,1940,,
+11,Antonuis,M,2,3,1863-02-17,1932-05-15,,
+12,Filomena,F,2,3,1867-03-14,1901-12-22,,
