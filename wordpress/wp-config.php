@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'database_name_here' );
+define( 'DB_NAME', 'prinster_wordpress' );
 
 /** MySQL database username */
-define( 'DB_USER', 'username_here' );
+define( 'DB_USER', 'prinster_wpuser' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'password_here' );
+define( 'DB_PASSWORD', 'thisWillChange' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -37,6 +37,11 @@ define( 'DB_CHARSET', 'utf8' );
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+/** Added based on information from digital ocean page
+ * {@link https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lamp-on-ubuntu-18-04}
+ */
+define( 'FS_METHOD', 'direct' );
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -46,14 +51,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define('AUTH_KEY',         'D+x]&!fv6a7|^4%f-T=6CW70L[q`NXua[x8V+jDLx;OUU}.|R-BZ2KaZ7r2^D@UL');
+define('SECURE_AUTH_KEY',  'AV)-jy-w;++ Z*S +$0%z4%<wA$|)f%eo<|U}2pSI6%ra-|$p}0K^ipCt7v`?VCQ');
+define('LOGGED_IN_KEY',    '3|$>g`9jG3t}$uA_4hgK@z@7l#XWviq^[?d]d2=u-{<,zx8[abD&a7t2fQGTu-#K');
+define('NONCE_KEY',        'cOQE=t <1/^^UT6AW$)&G-t%j@-B:I>[JRb@b[zhVG;C3S[fR?8_oIL3t#Y?I&Y2');
+define('AUTH_SALT',        'h:9|voFiTQD/EMxM+%NCit1XFQB&26t/D*(Z *@p%VrpuQ#s?K;/W%L5vjl[+}Ct');
+define('SECURE_AUTH_SALT', 'v>BmWMN{7g4ZOsbx84k&l|w|e6&.{swv|fncurft)PQ=5!07QX%1]t9}In~4eA$^');
+define('LOGGED_IN_SALT',   'z}&t4e-@C!$xbxiFkb8-AKmk|E)d:U>{*aV Qj%O_]*VDKVx>%W=zGo@m-xIh~/>');
+define('NONCE_SALT',       'K%F_Y1qXC7%=)^+DjErUmh:uyY9d;i*E9<Q UVDVTr>{N9.Br;z29G 7o >M84YN');
 
 /**#@-*/
 
