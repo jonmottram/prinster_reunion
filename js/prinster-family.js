@@ -22,42 +22,41 @@ var config = {
     },
     root = {},
 
-    id0 = {
+    josef1818 = {
         parent: root,
-        marriedto: "id1",
+        marriedto: "maria1823",
         text: {
             name: "Josef Prünster",
             birthday: "1818-01-18",
             deathday: "1889-02-10",
         },
     },
-    id00 = {
+    johann1825 = {
         parent: root,
         text: {
             name: "Johann Prünster",
             birthday: "1825-10-23",
         },
     },
-
-    id1 = {
+    maria1823 = {
         parent: root,
-        marriedto: id0,
+        marriedto: josef1818,
         HTMLclass: 'light-gray',
         text:{
             name: "Maria Grüner",
             birthday: "1823",
         },
     },
-    id2 = {
-        parent: id0,
+    maria1848 = {
+        parent: josef1818,
         HTMLclass: 'blue',
         text:{
             name: "Maria Prünster",
             birthday: "1848-10-23",
         },
     },
-    id3 = {
-        parent: id0,
+    anna1851 = {
+        parent: josef1818,
         HTMLclass: 'gray',
         text:{
             name: "Anna Prünster",
@@ -65,20 +64,17 @@ var config = {
             deathday: "1860-03-24",
         },
     },
-    id4 = {
-        parent: id00,
+    johonn1852 = {
+        parent: josef1818,
         HTMLclass: 'light-gray',
         text:{
             name: "Johonn Prünster",
             birthday: "1852-12-27",
             deathday: "1904-02-28",
         },
-        link: {
-            href: "http://www.google.com"
-        },
     },
-    id5 = {
-        parent: id4,
+    anne1899 = {
+        parent: johonn1852,
         HTMLclass: 'blue',
         text:{
             name: "Anne Noria",
@@ -86,8 +82,8 @@ var config = {
             deathday: "1981-10-05",
         },
     },
-    id6 = {
-        parent: id4,
+    noria1900 = {
+        parent: johonn1852,
         HTMLclass: 'blue',
         text:{
             name: "Noria Filomena",
@@ -95,8 +91,8 @@ var config = {
             deathday: "1944-03-14",
         },
     },
-    id7 = {
-        parent: id4,
+    filom1901 = {
+        parent: johonn1852,
         HTMLclass: 'blue',
         text:{
             name: "Filom Paulina",
@@ -104,8 +100,8 @@ var config = {
             deathday: "1944-08-18",
         },
     },
-    id8 = {
-        parent: id4,
+    joseph1902 = {
+        parent: johonn1852,
         HTMLclass: 'blue',
         text:{
             name: "Joseph Franz",
@@ -117,8 +113,8 @@ var config = {
     chart_config = [
         config,
         root,
-        id0,id1,id00,id2,id3,
-        id4,id5,id6,
-        id7,id8
+        josef1818,maria1823,johann1825,maria1848,anna1851,
+        johonn1852,anne1899,noria1900,
+        filom1901,joseph1902
     ];
 
