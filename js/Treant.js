@@ -1209,6 +1209,17 @@
             this.db.push( node );
 
             // skip root node (0)
+            if ( node.marriedToId !== '-1' ) {
+                for (var nodeIdx = 0; nodeIdx < this.db.length; nodeIdx++ )
+                {
+                    var thisNode = this.db[ nodeIdx ];
+                    if (thisNode.nameId === node.marriedToId)
+                    {
+                        var spouse = thisNode;
+                        console.log( "We have a spouse! " + node.text.name + " is married to " + spouse.text.name );
+                    }
+                }
+            }
             if ( parentId >= 0 ) {
                 var parent = this.get( parentId );
 
@@ -1326,6 +1337,9 @@
             this.leftNeighborId = null;
 
             this.stackParentId = stackParentId;
+
+            this.nameId = nodeStructure.nameId || '-1';
+            this.marriedToId = nodeStructure.marriedto || '-1';
 
             // pseudo node is a node with width=height=0, it is invisible, but necessary for the correct positioning of the tree
             this.pseudo = nodeStructure === 'pseudo' || nodeStructure['pseudo']; // todo: surely if nodeStructure is a scalar then the rest will error:

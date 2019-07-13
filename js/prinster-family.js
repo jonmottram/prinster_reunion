@@ -24,6 +24,7 @@ var config = {
 
     josef1818 = {
         parent: root,
+        nameId: "josef1818",
         marriedto: "maria1823",
         text: {
             name: "Josef Prünster",
@@ -40,7 +41,8 @@ var config = {
     },
     maria1823 = {
         parent: root,
-        marriedto: josef1818,
+        nameId: "maria1823",
+        marriedto: "josef1818",
         HTMLclass: 'light-gray',
         text:{
             name: "Maria Grüner",
